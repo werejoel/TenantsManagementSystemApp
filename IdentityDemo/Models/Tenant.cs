@@ -21,7 +21,7 @@ namespace TenantsManagementApp.Models
         public bool IsActive { get; set; } = true;
 
         // Navigation Properties
-        public virtual ApplicationUser User { get; set; } = null!;
+    public virtual ApplicationUser? User { get; set; }
         public virtual House? House { get; set; }
         public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
         public virtual ICollection<Charge> Charges { get; set; } = new List<Charge>();

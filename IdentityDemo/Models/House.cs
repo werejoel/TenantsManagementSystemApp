@@ -6,8 +6,9 @@ namespace TenantsManagementApp.Models
 {
     public class House : BaseEntity
     {
-        [ForeignKey("Landlord")]
-        public int LandlordId { get; set; }
+    [Required(ErrorMessage = "Please select a landlord.")]
+    [ForeignKey("Landlord")]
+    public int LandlordId { get; set; }
 
         [Required]
         [StringLength(100)]
@@ -27,8 +28,8 @@ namespace TenantsManagementApp.Models
 
         public bool IsActive { get; set; } = true;
 
-        // Navigation Properties
-        public virtual Landlord Landlord { get; set; } = null!;
+    // Navigation Properties
+    public virtual Landlord? Landlord { get; set; }
         public virtual ICollection<Tenant> Tenants { get; set; } = new List<Tenant>();
         public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
         public virtual ICollection<Charge> Charges { get; set; } = new List<Charge>();

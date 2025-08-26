@@ -14,7 +14,10 @@ namespace TenantsManagementApp
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews(options =>
+            {
+                options.Filters.Add(new Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter());
+            });
 
             //DbContext
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -113,6 +116,12 @@ namespace TenantsManagementApp
                         ctx.User.IsInRole("Admin") ||
                         ctx.User.HasClaim("Permission", "ManageUserClaims")));
             });
+            // Logging
+            builder.Services.AddLogging(Logging =>
+            {
+                Logging.AddConsole();
+                Logging.AddDebug();
+            });
 
             var app = builder.Build();
 
@@ -133,7 +142,7 @@ namespace TenantsManagementApp
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Account}/{action=Login}/{id?}");
 
             app.Run();
         }

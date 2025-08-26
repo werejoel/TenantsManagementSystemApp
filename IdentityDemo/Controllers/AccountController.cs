@@ -24,16 +24,18 @@ namespace TenantsManagementApp.Controllers
         }
 
         // GET: /Account/Register
-        [HttpGet]
-        public IActionResult Register()
+    [HttpGet]
+    [AllowAnonymous]
+    public IActionResult Register()
         {
             return View();
         }
 
         // POST: /Account/Register
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [AllowAnonymous]
+    public async Task<IActionResult> Register(RegisterViewModel model)
         {
             try
             {
@@ -219,7 +221,8 @@ namespace TenantsManagementApp.Controllers
 
         // GET: /Account/Login
         [HttpGet]
-        public IActionResult Login(string? ReturnUrl = null)
+    [AllowAnonymous]
+    public IActionResult Login(string? ReturnUrl = null)
         {
             ViewData["ReturnUrl"] = ReturnUrl;
             return View();
@@ -228,7 +231,8 @@ namespace TenantsManagementApp.Controllers
         // POST: /Account/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
+    [AllowAnonymous]
+    public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
         {
             try
             {
