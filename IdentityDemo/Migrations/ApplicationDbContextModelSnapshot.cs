@@ -382,21 +382,21 @@ namespace TenantsManagementApp.Migrations
                         {
                             Id = new Guid("a1b2c3d4-e5f6-7890-1234-567890abcdef"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "23940f87-1447-4a4e-9ab4-fd652643cb99",
-                            CreatedOn = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5113),
+                            ConcurrencyStamp = "1572d93b-0704-458c-9581-42da40619588",
+                            CreatedOn = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(8555),
                             Email = "admin@tms.com",
                             EmailConfirmed = true,
                             FirstName = "System",
                             IsActive = true,
                             LastName = "Administrator",
                             LockoutEnabled = false,
-                            ModifiedOn = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5118),
+                            ModifiedOn = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(8560),
                             NormalizedEmail = "ADMIN@TMS.COM",
                             NormalizedUserName = "ADMIN@TMS.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEH3P5q+8I9LkI97F825gFw/xorN9ugfW26sNZQx0Qn8iFpUA5cH8Nzdf+xzxXoYauw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIegQfelYlPFFeD2nTd+8WJb47uHp9Erj7HQD3s/QAmmxUXc9JNp4XamhqTpfwT7XQ==",
                             PhoneNumber = "+256700000000",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "53c11b71-050e-445f-86b5-0ddd01d1a0e6",
+                            SecurityStamp = "67fcb427-9dc4-4d60-9244-df34a91cb49a",
                             TwoFactorEnabled = false,
                             UserName = "admin@tms.com"
                         });
@@ -604,7 +604,7 @@ namespace TenantsManagementApp.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5468),
+                            CreatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9567),
                             IsActive = true,
                             LandlordId = 1,
                             Location = "Ntinda, Kampala",
@@ -612,12 +612,12 @@ namespace TenantsManagementApp.Migrations
                             Name = "House A1",
                             Price = 300000m,
                             Status = "Vacant",
-                            UpdatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5469)
+                            UpdatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9567)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5473),
+                            CreatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9573),
                             IsActive = true,
                             LandlordId = 1,
                             Location = "Ntinda, Kampala",
@@ -625,12 +625,12 @@ namespace TenantsManagementApp.Migrations
                             Name = "House A2",
                             Price = 450000m,
                             Status = "Vacant",
-                            UpdatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5474)
+                            UpdatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9574)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5478),
+                            CreatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9580),
                             IsActive = true,
                             LandlordId = 1,
                             Location = "Ndejje, Kampala",
@@ -638,12 +638,12 @@ namespace TenantsManagementApp.Migrations
                             Name = "House A3",
                             Price = 600000m,
                             Status = "Vacant",
-                            UpdatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5478)
+                            UpdatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9580)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5482),
+                            CreatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9586),
                             IsActive = true,
                             LandlordId = 1,
                             Location = "Nsambya, Kampala",
@@ -651,7 +651,7 @@ namespace TenantsManagementApp.Migrations
                             Name = "House A4",
                             Price = 450000m,
                             Status = "Vacant",
-                            UpdatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5483)
+                            UpdatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9587)
                         });
                 });
 
@@ -707,13 +707,13 @@ namespace TenantsManagementApp.Migrations
                         {
                             Id = 1,
                             Address = "Kampala, Uganda",
-                            CreatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5415),
+                            CreatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9338),
                             Email = "john.doe@email.com",
                             FirstName = "John",
                             IsActive = true,
                             LastName = "Doe",
                             Phone = "+256700000001",
-                            UpdatedAt = new DateTime(2025, 8, 26, 8, 34, 5, 624, DateTimeKind.Utc).AddTicks(5416)
+                            UpdatedAt = new DateTime(2025, 8, 29, 3, 36, 1, 895, DateTimeKind.Utc).AddTicks(9339)
                         });
                 });
 
@@ -857,13 +857,14 @@ namespace TenantsManagementApp.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PaymentMethod")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<DateTime>("PeriodEnd")
+                    b.Property<DateTime?>("PeriodEnd")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("PeriodStart")
+                    b.Property<DateTime?>("PeriodStart")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("TenantId")

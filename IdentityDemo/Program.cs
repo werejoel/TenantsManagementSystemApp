@@ -55,8 +55,8 @@ namespace TenantsManagementApp
             builder.Services.ConfigureApplicationCookie(options =>
             {
                 // This sets the path to the login page users are redirected to if unauthenticated
-                options.LoginPath = "/Account/Login";  // Change if your login page is elsewhere
-                options.AccessDeniedPath = "/Account/AccessDenied"; // Set your access denied path
+                options.LoginPath = "/Account/Login";  
+                options.AccessDeniedPath = "/Account/AccessDenied"; // Set access denied path
             });
 
             // Defining Hybrid Policies (Roles + Claims)
